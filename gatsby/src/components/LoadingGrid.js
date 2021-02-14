@@ -5,7 +5,7 @@ export default function LoadingGrid({ count }) {
   return (
     <ItemsGrid>
       {Array.from({ length: 4 }, (_, i) => (
-        <ItemStyles>
+        <ItemStyles key={`loader-${i}`}>
           <p>
             <span className="mark">Loading...</span>
           </p>
