@@ -76,10 +76,8 @@ export default function ToppingsFilter({ activeTopping }) {
       }
     }
   `)
-  // console.log({ toppings, pizzas })
   // Count how many pizzas are in each topping
   const toppingsWithCounts = countPizzasInToppings(pizzas.nodes)
-  // console.log(toppingsWithCounts)
   // Loop over the list of toppings and display the topping and the count of
   // pizzas in that topping
   // Link it up...
